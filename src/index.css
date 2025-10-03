@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CactoAI Design System - Dark theme with green accents */
+
+@layer base {
+  :root {
+    /* Dark background inspired by CactoAI */
+    --background: 220 27% 8%;
+    --foreground: 210 40% 98%;
+
+    /* Cards with subtle dark background */
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    /* Popover styling */
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* CactoAI Green as primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary dark tones */
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted colors for subtle elements */
+    --muted: 220 15% 15%;
+    --muted-foreground: 217 10% 64%;
+
+    /* Accent green for highlights */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Error states */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 220 15% 20%;
+    --input: 220 15% 18%;
+    --ring: 142 76% 36%;
+
+    /* Border radius */
+    --radius: 0.75rem;
+
+    /* Custom CactoAI colors */
+    --cacto-green: 142 76% 36%;
+    --cacto-green-light: 142 60% 45%;
+    --cacto-dark: 220 27% 8%;
+    --cacto-card: 220 20% 12%;
+    --cacto-border: 220 15% 20%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Same as light mode since we use dark theme by default */
+    --background: 220 27% 8%;
+    --foreground: 210 40% 98%;
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 217 10% 64%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 20%;
+    --input: 220 15% 18%;
+    --ring: 142 76% 36%;
+    --sidebar-background: 220 20% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 142 76% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
